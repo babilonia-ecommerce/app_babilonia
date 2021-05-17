@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="10dp"
+        android:layout_weight="30"/>
+
+    <TextView
+        android:id="@+id/tv_ciudad_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:layout_weight="20"/>
+
+    <TextView
+        android:id="@+id/tv_ciudad_dias"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_weight="25"/>
+
+    <TextView
+        android:id="@+id/tv_ciudad_precio"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_weight="25"/>
+
+</LinearLayout>

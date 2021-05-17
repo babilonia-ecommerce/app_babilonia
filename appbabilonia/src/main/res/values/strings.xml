@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">Babilonia Center</string>
+    <!--Menu Principal-->
+    <string name="menu_inicio">Inicio</string>
+    <string name="bienvenido">Bienvenido!</string>
+    <string name="menu_pedido_compras">Pedido de Compras</string>
+    <string name="menu_presupuesto_compras">Presupuesto de Compras</string>
+    <string name="menu_mercaderias">Mercaderias</string>
+    <string name="menu_proveedores">Proveedores</string>
+    <string name="menu_empleados">Empleados</string>
+    <string name="menu_ciudades">Ciudades</string>
+    <string name="menu_roles">Roles</string>
+    <string name="menu_usuarios">Usuarios</string>
+    <string name="menu_marcas">Marcas</string>
+    <string name="menu_cerrar_sesion">Cerrar Sesión</string>
+    <string name="menu_btn_reserva">Reservas</string>
+    <string name="menu_btn_presupuesto">Presupuestos</string>
+    <string name="fondo">Fondo</string>
+
+    <!-- DB -->
+    <string name="dbname">db_babilonia</string>
+
+    <!--Botones del Sistema-->
+    <string name="bt_nuevo">Nuevo</string>
+    <string name="bt_buscar">Buscar</string>
+    <string name="bt_modificar">Modificar</string>
+    <string name="bt_eliminar">Eliminar</string>
+    <string name="bt_listar">Lista</string>
+    <string name="bt_cancelar">Cancelar</string>
+    <string name="txt_buscador">Buscador</string>
+
+    <!-- Login -->
+    <string name="icon_home">Login</string>
+    <string name="login_usuario">Usuario</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_iniciar">Acceder</string>
+    <string name="login_cancelar">Cancelar</string>
+
+    <!-- Empleados -->
+    <string name="empleados_nombre">Nombres</string>
+    <string name="empleados_apellido">Apellidos</string>
+    <string name="empleados_cedula_identidad">CI N°</string>
+    <string name="empleados_fecha_nacimiento">Fecha Nac.</string>
+    <string name="empleados_sexo">Sexo</string>
+    <string name="empleados_estado_civil">Estado Civil</string>
+    <string name="empleados_nacionalidad">Nacionalidad</string>
+    <string name="empleados_telefono">Telefono</string>
+    <string name="empleados_direccion">Dirección</string>
+    <string name="empleados_email">E-mail</string>
+    <string name="empleados_estado">Estado</string>
+    <string name="empleados_estado_activo">Activo</string>
+    <string name="empleados_fecha_incorporacion">Fecha Incorp.</string>
+    <string name="empleados_legajo">Legajo</string>
+    <string name="empleados_id_ciudad">Ciudad</string>
+    <string name="empleados_id_usuario">Usuario</string>
+    <string name="list_empleados_cedula_identidad">CI N°</string>
+    <string name="list_empleados_estado">Estado</string>
+
+    <!-- Proveedores -->
+    <string name="proveedores_razon_social">Razon Social</string>
+    <string name="proveedores_ruc">RUC N°</string>
+    <string name="proveedores_id_ciudad">Ciudad°</string>
+    <string name="proveedores_direccion">Direccion</string>
+    <string name="proveedores_telefono">Telefono</string>
+    <string name="proveedores_email">Email</string>
+    <string name="proveedores_tipo_persona">Tipo de Persona</string>
+    <string name="list_proveedores_tipo_persona">Tipo</string>
+    <string name="list_proveedores_telefono">Telefono</string>
+
+    <!-- Usuarios -->
+    <string name="usuarios_id_rol">Rol</string>
+    <string name="usuarios_descripcion">Descripcion</string>
+    <string name="usuarios_contrasena">Contraseña</string>
+    <string name="estado">Estado</string>
+
+    <!-- Mercaderias -->
+    <string name="mercaderias_id_marca">Marca</string>
+    <string name="mercaderias_Descripcion">Descripcion</string>
+    <string name="mercaderias_precio_compra">Precio Compra</string>
+    <string name="mercaderias_precio_venta">Precio Venta</string>
+    <string name="mercaderias_stock">Stock</string>
+
+    <!-- Ciudades -->
+    <string name="ciudades_descripcion">Descripcion</string>
+
+    <!-- Marcas -->
+    <string name="marcas_descripcion">Descripcion</string>
+
+    <!-- Roles -->
+    <string name="roles_descripcion">Marca</string>
+
+
+    <!-- _________________________________________________________________Movimientos_________________________________________________________________ -->
+    <!-- Pedido de Compras -->
+    <string name="pedido_compras_sp_proveedor">Proveedor</string>
+    <string name="pedido_compras_txt_empleado">Empleado</string>
+    <string name="pedido_compras_txt_estado">Estado</string>
+    <string name="pedido_compras_txt_fecha">Fecha</string>
+    <string name="pedido_compras_txt_total">Total</string>
+
+    <string name="pedido_compras_txt_observacion">Observación</string>
+
+    <!-- Presupuesto de Compras -->
+    <string name="presupuesto_compras_sp_proveedor">Proveedor</string>
+    <string name="presupuesto_compras_txt_empleado">Empleado</string>
+    <string name="presupuesto_compras_txt_estado">Estado</string>
+    <string name="presupuesto_compras_txt_fecha">Fecha</string>
+    <string name="presupuesto_compras_txt_observacion">Observación</string>
+
+    <!-- Lista de Pedido/Presupuesto de Compras -->
+    <string name="tv_proveedor_razon_social">Proveedor</string>
+    <string name="tv_empleado_nombres">Empleado</string>
+    <string name="tv_fecha">Fecha</string>
+    <string name="tv_estado">Estado</string>
+    <string name="tv_total">Total</string>
+
+
+
+    <!-- _______________________________________________________STRINGS DE PROGRAMA RECICLADO_______________________________________________________-->
+
+    <!--   <string name="pedido_compras">Pedido de Compras</string>
+    <string name="presupuesto_compras">Presupuesto de Compras</string>
+    <string name="mercaderias">Mercaderias</string>
+    <string name="empleados">Empleados</string>
+    <string name="proveedores">Proveedores</string>
+    <string name="roles">Roles</string>
+    <string name="usuarios">Usuarios</string>
+    <string name="ciudades">Ciudades</string>
+    <string name="marcas">Marcas</string>
+    <string name="menu_cerrar_sesion">Salir</string>
+    <string name="menu_btn_reserva">Reservas</string>
+    <string name="menu_btn_presupuesto">Presupuestos</string>
+-->
+
+    <!-- Usuarios -->
+    <string name="usuario_nombre">Nombre</string>
+    <string name="usuario_apellido">Apellido</string>
+    <string name="usuario_telefono">Teléfono</string>
+    <string name="usuario_email">Email</string>
+    <string name="usuario_cuenta">Cuenta</string>
+    <string name="usuario_password">Contraseña</string>
+    <string name="usuario_admin">Admin</string>
+    <string name="usuario_bloqueado">Bloqueado</string>
+    <!-- Rol -->
+    <string name="perfil_titulo">Rol</string>
+    <string name="perfil_admin">Administrador</string>
+    <!-- Mercaderia -->
+    <string name="item_nombre">Nombre</string>
+    <string name="item_precio">Precio</string>
+    <!-- Paquete -->
+    <string name="paquete_nombre">Descripción</string>
+    <string name="paquete_fecha_salida">Salida</string>
+    <string name="paquete_fecha_llegada">Entrada</string>
+    <string name="paquete_cantidad_persona">Cantidad Personas</string>
+    <string name="paquete_financiacion">Cantidad Financiación</string>
+    <string name="paquete_ciudad">Ciudad</string>
+    <string name="paquete_ciudad_dias">Cantidad días</string>
+    <string name="paquete_ciudad_precio">Ciudad Precio</string>
+    <string name="paquete_item">Item</string>
+    <string name="paquete_ciudad_total">Ciudad Total</string>
+    <string name="paquete_item_total">Item Total</string>
+
+
+    <!--Datos a reemplazar-->
+    <string name="btn_registrar">Registrar</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_anular">Anular</string>
+    <string name="btn_finalizar">Finalizar</string>
+    <string name="btn_listar">Lista</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="txt_listar">Listar</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_usuario">Usuarios</string>
+    <string name="menu_paquete">Paquetes</string>
+    <string name="menu_item">Items</string>
+    <string name="menu_ciudad">Ciudades</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_ayuda">Acerca de</string>
+
+    <!-- Login / Registro-->
+
+
+
+</resources>

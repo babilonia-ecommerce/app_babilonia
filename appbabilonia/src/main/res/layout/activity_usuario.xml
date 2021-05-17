@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context="com.example.app_babilonia.usuario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_toolbar" />
+        <EditText
+            android:id="@+id/usuario_txt_codigo"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="invisible"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/usuario_txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="@string/usuario_nombre"
+            android:inputType="textPersonName"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/usuario_txt_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="@string/usuario_apellido"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/usuario_txt_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="@string/usuario_telefono"
+            android:inputType="phone"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/usuario_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="@string/usuario_email"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:textSize="10sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/txt_buscador"
+            android:textStyle="bold"
+            android:ellipsize="start"/>
+
+        <EditText
+            android:id="@+id/usuario_txt_cuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="@string/usuario_cuenta"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:maxLength="6"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/usuario_txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="@string/usuario_password"
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:id="@+id/usuario_cbox_admin"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ems="10"
+                android:hint="@string/usuario_admin"/>
+
+            <CheckBox
+                android:id="@+id/usuario_cbox_bloqueado"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ems="10"
+                android:hint="@string/usuario_bloqueado"/>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/usuario_btn_registrar"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="250dp"
+                android:onClick="EmpleadoNuevo"
+                android:visibility="visible"
+                android:backgroundTint="@color/menu_boton"
+                android:text="@string/bt_nuevo" />
+
+            <Button
+                android:id="@+id/usuario_btn_buscar"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:onClick="EmpleadoBuscar"
+                android:visibility="visible"
+                android:backgroundTint="@color/menu_boton"
+                android:text="@string/bt_buscar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:gravity="top"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Button
+                    android:id="@+id/usuario_btn_editar"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/bt_modificar"
+                    android:onClick="EmpleadosModificar"
+                    android:backgroundTint="@color/menu_boton"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:id="@+id/usuario_btn_eliminar"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/bt_eliminar"
+                    android:onClick="UsuarioEliminar"
+                    android:backgroundTint="@color/menu_boton"
+                    android:visibility="invisible"/>
+                <Button
+                    android:id="@+id/usuario_btn_cancelar"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/bt_cancelar"
+                    android:onClick="UsuarioCancelar"
+                    android:visibility="invisible"
+                    android:backgroundTint="@color/menu_boton"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/usuario_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include
+            layout="@layout/main_nav_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

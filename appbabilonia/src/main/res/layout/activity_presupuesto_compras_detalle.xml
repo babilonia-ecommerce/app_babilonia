@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pedido_compras_detalle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/txt_id_pedido_compras"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/paquete_txt_codigo_ciudad"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/paquete_txt_codigo_item"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/paquete_txt_nombre"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890"
+            android:ems="10"
+            android:hint="@string/paquete_nombre"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginLeft="235dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/paquete_cantidad_persona"
+                android:textStyle="bold"
+                android:ellipsize="start"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/paquete_txt_salida"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/paquete_fecha_salida"
+                android:importantForAutofill="no" />
+
+            <ImageButton
+                android:id="@+id/paquete_btn_calendario_salida"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/menu_boton"
+                android:src="@drawable/ic_calendario" />
+
+            <EditText
+                android:id="@+id/paquete_txt_cantidad_persona"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:maxLength="2"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginLeft="235dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/paquete_financiacion"
+                android:textStyle="bold"
+                android:ellipsize="start"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/paquete_txt_entrada"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/paquete_fecha_llegada"
+                android:importantForAutofill="no" />
+
+            <ImageButton
+                android:id="@+id/paquete_btn_calendario_entrada"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/menu_boton"
+                android:src="@drawable/ic_calendario" />
+
+            <Spinner
+                android:id="@+id/paquete_sp_financiacion"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/paquete_ciudad"
+                android:textStyle="bold"
+                android:ellipsize="start"/>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:text="@string/paquete_ciudad_dias"
+                android:textStyle="bold"
+                android:ellipsize="start"/>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/paquete_ciudad_precio"
+                android:textStyle="bold"
+                android:ellipsize="start"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <Spinner
+                android:id="@+id/paquete_sp_ciudad"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/paquete_sp_cant_dias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp" />
+
+            <EditText
+                android:id="@+id/paquete_txt_ciudad_precio"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:inputType="number"/>
+
+            <ImageButton
+                android:id="@+id/paquete_btn_ciudad_registrar"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/menu_boton"
+                android:src="@drawable/ic_check"
+                android:layout_gravity="center"
+                android:onClick="CiudadRegistrar"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <ListView
+            android:id="@+id/paquete_ciudad_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="0dp"
+                android:text="@string/paquete_ciudad_total"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/txt_paquete_ciudad_total"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="0dp"
+                android:textStyle="bold"
+                android:ellipsize="start"
+                android:gravity="end"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/paquete_item"
+                android:textStyle="bold"
+                android:ellipsize="start"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <Spinner
+                android:id="@+id/paquete_sp_item"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:id="@+id/paquete_btn_item_registrar"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/menu_boton"
+                android:src="@drawable/ic_check"
+                android:layout_gravity="center"
+                android:onClick="ItemRegistrar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <ListView
+                android:id="@+id/paquete_item_lista"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="0dp"
+                android:text="@string/paquete_item_total"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/txt_paquete_item_total"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="0dp"
+                android:textStyle="bold"
+                android:ellipsize="start"
+                android:gravity="end"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <Button
+                android:id="@+id/paquete_btn_editar"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/btn_editar"
+                android:onClick="PaqueteEditar"
+                android:backgroundTint="@color/menu_boton"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/paquete_btn_eliminar"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/btn_eliminar"
+                android:onClick="PaqueteEliminar"
+                android:backgroundTint="@color/menu_boton"
+                android:visibility="visible"/>
+            <Button
+                android:id="@+id/paquete_btn_cancelar"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/btn_cancelar"
+                android:onClick="PaqueteCancelar"
+                android:visibility="visible"
+                android:backgroundTint="@color/menu_boton"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
