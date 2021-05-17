@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.app_babilonia.api.bean.CityBean;
 import com.example.app_babilonia.api.client.CityService;
+import com.example.app_babilonia.api.manager.CityManager;
 import com.example.app_babilonia.database.SQLControl;
 import com.example.app_babilonia.R;
 
@@ -42,8 +43,6 @@ public class login extends AppCompatActivity {
         // Inicializar variables
         et_usuario = (EditText)findViewById(R.id.login_txt_usuario);
         et_password = (EditText)findViewById(R.id.login_txt_password);
-        this.testRetrofit();
-
     }
 
     private void testRetrofit() {
@@ -89,6 +88,11 @@ public class login extends AppCompatActivity {
 
     // Metodo para iniciar sesión
     public void IniciarSesion(View view){
+        EditText cityDescriptionTest = (EditText)findViewById(R.id.login_txt_usuario);
+        CityBean cityTest = new CityBean();
+        cityTest.setDescription(cityDescriptionTest.getText().toString());
+        this.cities = CityManager.getInstance().save(cityTest);
+
         // Obtenemos los valores de los campos del formulario
         String usu_cuenta_str = et_usuario.getText().toString();
         String usu_pass_str = et_password.getText().toString();
